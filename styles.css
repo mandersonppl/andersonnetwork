@@ -1,0 +1,221 @@
+
+img {
+    align-content: center;
+    
+}
+
+/* Navigation to the Different Pages */
+nav {
+    text-align: center;
+    font-family: Georgia;
+    margin-left: 550px;
+    margin-right: 550px;
+}
+
+
+a {
+    font-family: Georgia;
+    font-size: 14pt;
+    text-align: center;
+}
+
+/* Link Styles */
+a:link, a:visited {
+    background: radial-gradient(white, lightgray, gray);
+    color: black;
+    border: 2px solid black;
+    border-radius: 60px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    display: -webkit-inline-flex;
+}
+
+a:hover, a:active {
+    background-color: orange;
+    color: ivory;
+}
+
+/* unvisited link */
+a:link {
+    color: royalblue;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: royalblue;
+    text-decoration: none;
+}
+
+/* mouse over link  */
+a:hover {
+    color: firebrick;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: royalblue;
+    text-decoration: underline;
+}
+
+ul {
+    display: block;
+    align-content: center;
+    text-align: center;
+}
+
+body {
+    border-radius: 60px 60px;
+    background-image: url(Backgroundimage3.jpg);
+    background-color: silver;
+    background-repeat: repeat;
+    background-size: cover;
+  }
+#main {
+    color: orange;
+    font-family: Georgia;
+    font-size: 5em;
+    background-image: url(Topbannerimage1.jpg);
+    align-items: center;
+    text-align: center;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    background-color: black;
+}
+
+.headings{
+    color: royalblue;
+    font-family: Georgia;
+    font-size: 30pt;
+    text-align: center;
+    font-variant: small-caps;
+    text-shadow: black 0px 0px 3px,
+                 orange 2px 2px 1px,
+                 black 0px 0px 55px;
+}
+
+div {
+    display: inline-flex;
+    align-items: center;
+}
+    
+p {
+    font-family: Georgia;
+    font-size: 14pt;
+    text-align: center;
+}
+
+/* Article Styles */
+
+article {
+    /* background: url(Backgroundimage1.jpg); */
+    background-size: cover;
+    align-items: center;
+    margin-left: 550px;
+    margin-right: 550px;
+}
+        
+footer {
+    font-family: Roboto;
+    text-align: center;    
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+
+/* Homepage Banner Picture */
+.background {
+    background-image: url(Ourcompanyimage1.jpg);
+    background-size: cover;
+    background-color: silver;
+    width: 740px;
+    height: 200px;
+    border: groove 30px gray;
+    border-radius: 60px;
+}
+
+/* About Us Banner Picture */
+.aboutus {
+    background-image: url(Aboutpicture3.jpg);
+    background-size: cover;
+    width: 740px;
+    height: 200px;
+    border: groove 30px gray;
+    border-radius: 60px;
+}    
+
+/* Contact Us Banner Picture */
+.contactus {
+    background-image: url(ContactUs_Image3.jpg);
+    background-size: cover;
+    width: 740px;
+    height: 200px;
+    border: groove 30px gray;
+    border-radius: 60px;
+}
+
+/* Table Styles */
+table.schedule {
+    background: gray;
+    border: 10px outset royalblue;
+    border-collapse: separate;
+    border-spacing: 5px;
+    font-size: 0.75em;
+    width: 42.5%;
+    margin-left: 545px;
+    margin-right: 550px;
+}
+
+/* Table Cell Styles */
+table.schedule th, table.schedule td {
+    border: 1px solid black;
+    padding: 5px;
+    vertical-align: top;
+}
+
+/* Table Caption Styles */
+table.schedule caption {
+    caption-side: bottom;
+    text-align: right;
+}
+
+/* Row Group Styles */
+table.schedule thead {
+    background: cornflowerblue;
+    color: black
+}
+
+table.schedule thead tr {
+    height: 30px;
+}
+
+table.schedule tfoot {
+    background: black;
+    color: white;
+    text-align: center
+}
+
+table.schedule tbody tr {
+    height: 40px;
+}
+
+/* Column Group Styles */
+
+col#firstCol {
+    background-color: cornflowerblue;
+    width: 16%;
+    text-align: center;
+}
+
+col.dayCols {
+    background-color: cadetblue;
+    width: 12%
+}
