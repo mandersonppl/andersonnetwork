@@ -69,7 +69,7 @@ ul {
 
 body {
     border-radius: 60px 60px;
-    background-image: url(Backgroundimage3.jpg);
+    background-image: url(Backgroundimage1.jpg);
     background-color: silver;
     background-repeat: repeat;
     background-size: cover;
@@ -78,7 +78,7 @@ body {
     color: orange;
     font-family: Georgia;
     font-size: 5em;
-    background-image: url(Topbannerimage1.jpg);
+    background-image: url(Topbannerimage2.jpg);
     align-items: center;
     text-align: center;
     margin-top: -8px;
@@ -102,6 +102,29 @@ div {
     display: inline-flex;
     align-items: center;
 }
+
+/*Column on Services Page */
+
+.col1,.col2 {
+    background-color: orange;
+    border: 10px outset royalblue;
+    width: 48.5%;
+    height: 550px;
+    margin-bottom: inherit;
+    margin-top: inherit;
+      
+}
+
+.col1 {
+    float: inherit;       
+}
+
+.col2 {
+    text-align: left;
+    float: right;
+}
+
+/* Paragraph Styles */
     
 p {
     font-family: Georgia;
@@ -133,32 +156,32 @@ footer {
 
 /* Homepage Banner Picture */
 .background {
-    background-image: url(Ourcompanyimage1.jpg);
+    background-image: url(Ourcompanyimage2.jpg);
     background-size: cover;
     background-color: silver;
     width: 740px;
-    height: 200px;
-    border: groove 30px gray;
+    height: 300px;
+    border: groove 10px orange;
     border-radius: 60px;
 }
 
 /* About Us Banner Picture */
 .aboutus {
-    background-image: url(Aboutpicture3.jpg);
-    background-size: cover;
+    background-image: url(Aboutpicture2.jpg);
+    background-size: contain;
     width: 740px;
-    height: 200px;
-    border: groove 30px gray;
+    height: 250px;
+    border: groove 10px orange;
     border-radius: 60px;
 }    
 
 /* Contact Us Banner Picture */
 .contactus {
-    background-image: url(ContactUs_Image3.jpg);
+    background-image: url(Contactusimage1.jpg);
     background-size: cover;
-    width: 740px;
-    height: 200px;
-    border: groove 30px gray;
+    width: 780px;
+    height: 300px;
+    border: groove 10px orange;
     border-radius: 60px;
 }
 
