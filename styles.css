@@ -8,12 +8,12 @@ img {
 nav {
     text-align: center;
     font-family: Georgia;
-    margin-left: 550px;
-    margin-right: 550px;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 
-a {
+a.navigation {
     font-family: Georgia;
     font-size: 14pt;
     text-align: center;
@@ -99,9 +99,11 @@ body {
 }
 
 div {
-    display: inline-flex;
+    display: inline-grid;
     align-items: center;
+    justify-content: center;
 }
+
 
 /*Column on Services Page */
 
@@ -241,4 +243,138 @@ col#firstCol {
 col.dayCols {
     background-color: cadetblue;
     width: 12%
+}
+
+/* Audio and Video Player Styles */
+
+audio, video {
+    border: 3px solid royalblue;
+    border-radius: 60px 60px;
+    box-shadow: orange 8px 8px 15px;
+    display: block;
+    margin: 10px auto;
+    width: 30%;
+}
+
+/* YouTube Videos */
+iframe {
+    border: 3px solid orange;
+    box-shadow: royalblue 8px 8px 15px;
+    margin-left: 50px;
+}
+
+/* Gallery Photos */
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat (3, 1fr);
+    grid-gap: 20px;
+    column-gap: 20px;
+    color: orange;
+}
+
+.gallery:hover {
+    border: 3px solid orange;
+}
+
+/* Temporarily Disabled for Gallery pics
+.gallery img {
+    border-radius: 60px 60px;
+    display: inline-flex;
+    width: 50%;
+    height: 50%;
+}
+*/
+
+
+.image {
+    border: 3px solid royalblue;
+    border-radius: 60px 60px;
+    box-shadow: orange 8px 8px 15px;
+    display: inline-flex;
+}
+*/
+
+/* Active on Gallery page currently */
+.main-gallery {
+    padding: 20%;
+    flex: 1 1 100%;
+    min-height: 100vh;
+    color: orange;
+}
+
+/* Active on Gallery page currently */
+.gallery-picture {
+    background-color: orange;
+    color: royalblue;
+    height: 100%;
+    font-weight: bold;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    background-size: cover;
+    position: relative;
+}
+
+/* Active on second image in Gallery currently 
+.one {
+    background-image: url(Galleryimage1.jpeg);
+    background-position: center;
+    height: 100%;
+    width: 45%;
+}
+
+.one::before {
+    display: block;
+    opacity: 0.25;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transition: all;
+    z-index: -1;
+}
+
+/* Active on first image in Gallery currently 
+.two {
+    background-image: url(Galleryimage2.jpg);
+    background-position: center;
+    height: 100%;
+    width: 50%;
+}
+
+.two::before {
+    display: block;
+    background-color: orange;
+    opacity: 0.25;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transition: all;
+    z-index: -1;
+}
+
+/* Active on third image in Gallery currently 
+.three {
+    background-image: url(Galleryimage3.jpeg);
+    background-position: center;
+}
+
+/* Active on fourth image in Gallery currently 
+.four {
+    background-image: url(Galleryimage4.jpg);
+    background-position: center;
+}
+
+.gallery .medium {
+    grid-row: span 2;
+    grid-column: span 2;
 }
