@@ -271,7 +271,6 @@ iframe {
     align-items: center;
     height: 100%;
     grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat (3, 1fr);
     grid-gap: 20px;
     column-gap: 20px;
     color: orange;
@@ -303,7 +302,7 @@ iframe {
 .main-gallery {
     padding: 20%;
     flex: 1 1 100%;
-    min-height: 100vh;
+    min-height: 100px;
     color: orange;
 }
 
