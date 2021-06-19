@@ -114,6 +114,104 @@
     </tr>
     </tbody>
 </table>    
+
+<form action="response_page (1).php" method="post">
+    <h1>Contact Information Form</h1>
+    <p>Required fields are followed by <strong><abbr title="required">*</abbr> </strong></p>
+<section>
+    <h2>Contact Info:</h2>
+    <fieldset>
+        <legend>Gender</legend>
+        <ul>
+            <li>
+                <label for="title_1">
+                    <input type="radio" id="title_1" name="gender" value="M" >
+                    Male
+                </label>
+            </li>
+            <li>
+                <label for="title_2">
+                    <input type="radio" id="title_2" name="gender" value="F" >
+                    Female
+                </label>
+            </li>
+            <li>
+                <label for="title_3">
+                    <input type="radio" id="title_3" name="gender" value="N/A" >
+                    N/A
+                </label>
+            </li>
+        </ul>
+    </fieldset>
+    <p>
+        <label for="name">
+            <span>Name: </span>
+            <strong><abbr title="required">*</abbr> </strong>
+        </label>
+        <input type="text" id="name" name="username">
+    </p>
+    <p>
+        <label for="mail">
+            <span>E-Mail: </span>
+            <strong><abbr title="required">*</abbr> </strong>
+        </label>
+        <input type="email" id="mail" name="usermail">
+    </p>
+    <p>
+        <label for="phone">
+            <span>Phone Number: </span>
+            <strong><abbr title="required">*</abbr> </strong>
+        </label>
+        <input type="tel" id="phone" name="userphone">
+    </p>    
+</section>
+
+<section>
+    <h2>Details</h2>
+    <p>
+        <label for="method">
+            <span>Preferred Contact Method:</span>
+        </label>
+        <select id="method" name="preferredmethod">
+            <option value="phone">Phone</option>
+            <option value="email">Email</option>
+        </select>
+    </p>
+    <p>
+        <label for="time">
+            <span>Preferred Contact Time:</span>
+        </label>
+        <select id="time" name="preferredtime">
+            <option value="morning">Morning 7am-11am EST</option>
+            <option value="midday">Midday 11am-3pm EST</option>
+            <option value="afternoon">Afternoon 3pm-7pm EST</option>
+        </select>
+    </p>
+    <p>
+        <label for="date">
+            <span>Best Date to Contact You <em>(mm/dd/yyyy)</em>:</span>
+        </label>
+        <input type="date" id="date" name="bestdate">
+    </p>
+    <p>
+    <label for="company">
+        <span>Company Represented (if applicable): </span>
+    </label>
+    <input type="text" id="company" name="companyname">
+    </p>
+</section>
+
+<section>
+    <label for="commBox">Questions/Comments/Notes:</label>
+    <textarea name="comments" id="commBox"></textarea>
+</section>
+    
+<section>
+    <p>
+        <button type="submit">Submit Information</button>
+    </p>
+</section>    
+</form>
     
 <footer>
         <strong>The Anderson Network</strong> &#8226; <strong>Matt & Tiffany Anderson</strong> &#8226; <strong>Louisville, Kentucky</strong>
