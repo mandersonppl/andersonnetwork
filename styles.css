@@ -321,60 +321,69 @@ iframe {
     position: relative;
 }
 
-/* Active on second image in Gallery currently 
-.one {
-    background-image: url(Galleryimage1.jpeg);
-    background-position: center;
-    height: 100%;
-    width: 45%;
+/* Form Structure Commands */
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 3px solid orange;
+    border-radius: 1em;
 }
 
-.one::before {
-    display: block;
-    opacity: 0.25;
+div+div {
+    margin-top: 1em;
+}
+
+label span {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+}
+
+input, textarea {
+    font: 1em sans-serif;
+    width: 250px;
+    box-sizing: border-box;
+    border: 2px solid royalblue;
+}
+
+input[type=checkbox], input[type=radio] {
+    width: auto;
+    border: none;
+}
+
+input:focus, textarea:focus {
+    border-color: royalblue;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+    resize: vertical;
+}
+
+fieldset {
+    width: 250px;
+    box-sizing: border-box;
+    margin-left: 137px;
+    border: 2px solid royalblue;
+}
+
+button {
+    margin: 20px 0 0 124px;
+}
+
+label {
+    position: relative;
+}
+
+label em {
     position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    transition: all;
-    z-index: -1;
+    right: 5px;
+    top: 20px;
 }
 
-/* Active on first image in Gallery currently 
-.two {
-    background-image: url(Galleryimage2.jpg);
-    background-position: center;
-    height: 100%;
-    width: 50%;
-}
-
-.two::before {
-    display: block;
-    background-color: orange;
-    opacity: 0.25;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    transition: all;
-    z-index: -1;
-}
-
-/* Active on third image in Gallery currently 
-.three {
-    background-image: url(Galleryimage3.jpeg);
-    background-position: center;
-}
-
-/* Active on fourth image in Gallery currently 
-.four {
-    background-image: url(Galleryimage4.jpg);
-    background-position: center;
-}
-
-.gallery .medium {
-    grid-row: span 2;
-    grid-column: span 2;
+textarea {
+    height: 100px;
+    width: 100%
 }
